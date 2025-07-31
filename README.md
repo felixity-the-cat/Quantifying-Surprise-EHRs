@@ -10,6 +10,8 @@
 > informativeness can help interpret the predictions of prognostic models trained
 > on foundation model-derived representations.
 
+**This code reproduces the results found in our manuscript[^1].**
+
 ## Requirements & structure
 
 The bash scripts can be run in a [slurm](https://slurm.schedmd.com) environment
@@ -254,3 +256,11 @@ the manuscript.
     ```
 
     to keep logs.
+
+---
+
+[^1]:
+    M. Burkhart, B. Ramadan, L. Solo, W. Parker, & B. Beaulieu-Jones, Quantifying
+    surprise in clinical care: Detecting highly informative events in electronic
+    health records with foundation models,
+    [arXiv:2507.22798](https://doi.org/10.48550/arXiv.2507.22798)
