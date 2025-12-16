@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Burkhart"
+    given-names: "Michael C."
+    orcid: "https://orcid.org/0000-0002-2772-5840"
+  - family-names: "Ramadan"
+    given-names: "Bashar"
+  - family-names: "Solo"
+    given-names: "Luke"
+  - family-names: "Parker"
+    given-names: "William F."
+  - family-names: "Beaulieu-Jones"
+    given-names: "Brett K."
+  doi: "10.1142/9789819824755_0013"
+  conference: "Pacific Symposium on Biocomputing 31"
+  start: 173 # First page number
+  end: 188 # Last page number
+  title: "Quantifying surprise in clinical care: Detecting highly informative events in electronic health records with foundation models"
+  year: 2026

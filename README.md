@@ -10,7 +10,7 @@
 > informativeness can help interpret the predictions of prognostic models trained
 > on foundation model-derived representations.
 
-**This code reproduces the results found in our manuscript[^1].**
+**This code reproduces the results found in our paper[^1].**
 
 ## Requirements & structure
 
@@ -257,10 +257,7 @@ the manuscript.
 
     to keep logs.
 
----
-
 [^1]:
-    M. Burkhart, B. Ramadan, L. Solo, W. Parker, & B. Beaulieu-Jones, Quantifying
-    surprise in clinical care: Detecting highly informative events in electronic
-    health records with foundation models,
-    [arXiv:2507.22798](https://doi.org/10.48550/arXiv.2507.22798)
+    M. Burkhart, B. Ramadan, L. Solo, W. Parker, & B. Beaulieu-Jones,
+    [Quantifying surprise in clinical care: Detecting highly informative events in electronic health records with foundation models](https://doi.org/10.1142/9789819824755_0013),
+    Pacific Symposium on Biocomputing 31 (2026), 173—188.
