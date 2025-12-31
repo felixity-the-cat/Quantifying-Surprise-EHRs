@@ -32,8 +32,7 @@ def main(
     batch_sz: int = 2**5,
 ):
     data_dir, model_loc = map(
-        lambda d: pathlib.Path(d).expanduser().resolve(),
-        (data_dir, model_loc),
+        lambda d: pathlib.Path(d).expanduser().resolve(), (data_dir, model_loc)
     )
 
     # prepare parallelism

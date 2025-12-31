@@ -41,7 +41,6 @@ def main(
     addl_mdls_loc: str = None,
     out_dir: os.PathLike = None,
 ):
-
     data_dir, ref_mdl_loc, out_dir = map(
         lambda d: pathlib.Path(d).expanduser().resolve(),
         (data_dir, ref_mdl_loc, out_dir),
@@ -87,9 +86,7 @@ def main(
         .with_columns(token=pl.Series(vocab.lookup.keys()))
         .with_columns(
             type=pl.col("token").map_elements(
-                token_type,
-                return_dtype=pl.String,
-                skip_nulls=False,
+                token_type, return_dtype=pl.String, skip_nulls=False
             )
         )
     )
@@ -114,9 +111,7 @@ def main(
             .with_columns(token=pl.Series(vocab.lookup.keys()))
             .with_columns(
                 type=pl.col("token").map_elements(
-                    token_type,
-                    return_dtype=pl.String,
-                    skip_nulls=False,
+                    token_type, return_dtype=pl.String, skip_nulls=False
                 )
             )
         )
@@ -138,8 +133,7 @@ def main(
         fig.add_trace(addl_fig)
 
     fig.update_layout(
-        template="plotly_white",
-        font_family="CMU Serif, Times New Roman, serif",
+        template="plotly_white", font_family="CMU Serif, Times New Roman, serif"
     )
 
     # fig.write_html(
@@ -192,9 +186,7 @@ def main(
             .with_columns(token=pl.Series(list(vocab.lookup.keys())[:10]))
             .with_columns(
                 type=pl.col("token").map_elements(
-                    token_type,
-                    return_dtype=pl.String,
-                    skip_nulls=False,
+                    token_type, return_dtype=pl.String, skip_nulls=False
                 )
             )
         )
@@ -216,8 +208,7 @@ def main(
         fig.add_trace(addl_fig)
 
     fig.update_layout(
-        template="plotly_white",
-        font_family="CMU Serif, Times New Roman, serif",
+        template="plotly_white", font_family="CMU Serif, Times New Roman, serif"
     )
 
     # fig.write_html(out_dir.joinpath("embedding_q-{m}.html".format(m=ref_mdl_loc.stem)))
